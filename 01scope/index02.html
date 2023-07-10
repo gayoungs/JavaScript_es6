@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+    </ul>
+
+    <script>
+        var li = document.querySelectorAll('li');
+        
+        //var i로 하면 누를 때 4만 뜬다
+        //인덱스로 뜨게 하고 싶을 때 let을 쓰면 된다
+        for (let i = 0; i < li.length; i++) {
+            li[i].addEventListener('click', function() {
+                console.log(i);
+            })
+        }
+    </script>
+</body>
+</html>

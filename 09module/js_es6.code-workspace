@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "js_es6",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js_es6"
+	}
+}

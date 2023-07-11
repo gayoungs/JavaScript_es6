@@ -24,9 +24,19 @@
         })();
         */
 
-        var a = window.setInterval(()=>{console.log('call')},1000);
-        window.setTimeout(()=>{window.clearInterval(a)},5000);
-        (()=>{console.log('즉시 실행 함수')})();
+        // var a = window.setInterval(()=>{console.log('call')},1000);
+        // window.setTimeout(()=>{window.clearInterval(a)},5000);
+        // (()=>{console.log('즉시 실행 함수')})();
+
+
+        //1초 마다실행
+        var a = window.setInterval(() => console.log('call'), 1000);
+        
+        window.setTimeout(() => window.clearInterval(a), 5000);
+
+        (() => {
+            console.log('즉시 실행 함수');
+        })();
         
 
 
